@@ -16,9 +16,9 @@ public class rsa implements Serializable{
     BigInteger e, d;
     
     //constructor
-    public rsa(int tamPrimo){
+    public rsa(int Primo){
         //para que no salga en chino el cifrado, literal
-        this.Primo = (BigInteger.TEN.pow(tamPrimo)).subtract(BigInteger.ONE).toString(2).length() - 1;
+        this.Primo = (BigInteger.TEN.pow(Primo)).subtract(BigInteger.ONE).toString(2).length() - 1;
     }
     
 
